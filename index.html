@@ -1,0 +1,824 @@
+<!DOCTYPE html>
+<html lang="es-CO">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>CG Asesores Contables y Tributarios | Camila Granados, Contadora Pública</title>
+  <meta name="description" content="CG Asesores Contables y Tributarios: gestión contable, impuestos, revisoría fiscal, nómina, facturación electrónica y asesoría financiera para personas naturales, empresas y organizaciones en Colombia. Dirigida por Camila Granados, Contadora Pública.">
+  <meta name="keywords" content="contadora pública, asesoría contable, asesoría tributaria, declaración de renta, revisoría fiscal, información exógena, nómina electrónica, facturación electrónica, RUT, DIAN, Colombia">
+  <meta name="author" content="Camila Granados – CG Asesores Contables y Tributarios">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#0b1e3d">
+
+  <!-- Seguridad: política de contenido (ver docs/SEGURIDAD.md) -->
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data:; media-src 'self'; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'; upgrade-insecure-requests">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+
+  <!-- URL canónica: reemplace TU-USUARIO y el nombre del repositorio (ver README) -->
+  <link rel="canonical" href="https://TU-USUARIO.github.io/cg-asesores-web/">
+
+  <!-- Open Graph / redes sociales -->
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="es_CO">
+  <meta property="og:site_name" content="CG Asesores Contables y Tributarios">
+  <meta property="og:title" content="CG Asesores Contables y Tributarios">
+  <meta property="og:description" content="Tu tranquilidad financiera, nuestro compromiso profesional. Soluciones contables, tributarias y financieras para personas naturales y empresas.">
+  <meta property="og:url" content="https://TU-USUARIO.github.io/cg-asesores-web/">
+  <meta property="og:image" content="https://TU-USUARIO.github.io/cg-asesores-web/assets/img/og-cg-asesores.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <!-- Iconos -->
+  <link rel="icon" href="favicon.ico" sizes="48x48">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/icons/favicon-32.png">
+  <link rel="apple-touch-icon" href="assets/icons/apple-touch-icon.png">
+  <link rel="manifest" href="site.webmanifest">
+
+  <!-- Tipografías -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Montserrat:wght@400;500;600;700&display=swap">
+
+  <link rel="preload" href="assets/img/video-poster.webp" as="image" type="image/webp">
+  <link rel="stylesheet" href="assets/css/styles.css">
+
+  <!-- Datos estructurados para buscadores -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "AccountingService",
+    "name": "CG Asesores Contables y Tributarios",
+    "alternateName": "Camila Granados Asesores Contables y Tributarios",
+    "description": "Servicios profesionales contables, tributarios, financieros y de revisoría fiscal para personas naturales, empresas y organizaciones.",
+    "url": "https://TU-USUARIO.github.io/cg-asesores-web/",
+    "logo": "https://TU-USUARIO.github.io/cg-asesores-web/assets/img/logo-cg.png",
+    "image": "https://TU-USUARIO.github.io/cg-asesores-web/assets/img/og-cg-asesores.jpg",
+    "telephone": ["+57 314 428 8780", "+57 300 862 3090"],
+    "email": "camilagranadoscontadora@gmail.com",
+    "areaServed": {"@type": "Country", "name": "Colombia"},
+    "founder": {"@type": "Person", "name": "Camila Granados", "jobTitle": "Contadora Pública"},
+    "sameAs": ["https://www.instagram.com/camilagranadoscontadora/", "https://www.atom.bio/camilagranadoscontadora"],
+    "knowsAbout": ["Contabilidad", "Impuestos", "Revisoría fiscal", "Nómina electrónica", "Facturación electrónica", "Información exógena", "Análisis financiero"]
+  }
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+  <!-- Iconografía corporativa (sprite SVG) -->
+  <svg class="sprite" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
+    <symbol id="i-ledger" viewBox="0 0 24 24"><rect x="4.5" y="3" width="15" height="18" rx="1.8"/><path d="M8 3v18M11 7.5h5.5M11 11h5.5M11 14.5h3.5"/></symbol>
+    <symbol id="i-advice" viewBox="0 0 24 24"><path d="M20.5 12a8.5 8.5 0 0 1-12.4 7.6L3.5 20.5l1-4.4A8.5 8.5 0 1 1 20.5 12z"/><path d="M8.5 12h.01M12 12h.01M15.5 12h.01" stroke-width="2.4" stroke-linecap="round"/></symbol>
+    <symbol id="i-tax" viewBox="0 0 24 24"><path d="M6 3h9l4 4v14H6z"/><path d="M15 3v4h4M9.5 17l5.5-6"/><circle cx="10" cy="11.6" r="1.1"/><circle cx="14.6" cy="16.4" r="1.1"/></symbol>
+    <symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 3l7 2.8v5.4c0 4.4-2.9 8.2-7 9.8-4.1-1.6-7-5.4-7-9.8V5.8z"/><path d="M9 12.2l2.1 2.1L15.2 10"/></symbol>
+    <symbol id="i-target" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5"/><circle cx="12" cy="12" r="4.8"/><circle cx="12" cy="12" r="1.2"/><path d="M12 1.5v3M12 19.5v3M1.5 12h3M19.5 12h3"/></symbol>
+    <symbol id="i-building" viewBox="0 0 24 24"><path d="M4 21V5.5L12 3v18M12 8.5l8 2.2V21M2.5 21h19M7 8h2M7 11.5h2M7 15h2M15 13.5h2M15 17h2"/></symbol>
+    <symbol id="i-search" viewBox="0 0 24 24"><circle cx="10.5" cy="10.5" r="6.5"/><path d="M20.5 20.5l-5.2-5.2M8 10.5h5M10.5 8v5"/></symbol>
+    <symbol id="i-receipt" viewBox="0 0 24 24"><path d="M6 3h12v18l-3-1.8-3 1.8-3-1.8L6 21z"/><path d="M9 8h6M9 11.5h6M9 15h3.5"/></symbol>
+    <symbol id="i-users" viewBox="0 0 24 24"><circle cx="9" cy="8" r="3.2"/><path d="M3 20c0-3.4 2.7-6 6-6s6 2.6 6 6"/><circle cx="17.2" cy="9" r="2.5"/><path d="M16.4 14.1c2.7.4 4.6 2.8 4.6 5.9"/></symbol>
+    <symbol id="i-einvoice" viewBox="0 0 24 24"><path d="M6 3h8.5L19 7.5V21H6z"/><path d="M14 3v5h5M9 12h7M9 15.5h4"/><path d="M13.5 18.5l1.4 1.4 2.6-2.6"/></symbol>
+    <symbol id="i-cert" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="12.5" rx="1.6"/><path d="M7 8h10M7 11.5h5.5"/><circle cx="16" cy="16.2" r="2.6"/><path d="M14.6 18.4L14 22l2-1.1 2 1.1-.6-3.6"/></symbol>
+    <symbol id="i-chart" viewBox="0 0 24 24"><path d="M4 3.5V20h16.5"/><path d="M7.5 15.5l3.8-4.6 3 2.8 4.7-6.2"/><path d="M15.8 7.5H19v3.2"/></symbol>
+    <symbol id="i-landmark" viewBox="0 0 24 24"><path d="M3 9l9-5.5L21 9z"/><path d="M5.5 9.5v8M9.8 9.5v8M14.2 9.5v8M18.5 9.5v8M3 20.5h18M4 17.5h16"/></symbol>
+    <symbol id="i-heart" viewBox="0 0 24 24"><path d="M12 20s-7.5-4.4-7.5-10A4.2 4.2 0 0 1 12 7.6 4.2 4.2 0 0 1 19.5 10c0 5.6-7.5 10-7.5 10z"/></symbol>
+    <symbol id="i-lock" viewBox="0 0 24 24"><rect x="5" y="10.5" width="14" height="10" rx="1.8"/><path d="M8 10.5V7.5a4 4 0 0 1 8 0v3M12 14.5v2.5"/></symbol>
+    <symbol id="i-refresh" viewBox="0 0 24 24"><path d="M19.5 7.5A8 8 0 0 0 4.6 9.2M4.5 16.5a8 8 0 0 0 14.9-1.7"/><path d="M19.8 3.8v3.9h-3.9M4.2 20.2v-3.9h3.9"/></symbol>
+    <symbol id="i-sliders" viewBox="0 0 24 24"><path d="M4 7h9M17 7h3M4 17h3M11 17h9"/><circle cx="15" cy="7" r="2.2"/><circle cx="9" cy="17" r="2.2"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5"/></symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M4.5 12h15M13.5 6l6 6-6 6"/></symbol>
+    <symbol id="i-close" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18"/></symbol>
+    <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h10"/></symbol>
+    <symbol id="i-plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></symbol>
+    <symbol id="i-play" viewBox="0 0 24 24"><path d="M8 5.5v13l10.5-6.5z" fill="currentColor"/></symbol>
+    <symbol id="i-pause" viewBox="0 0 24 24"><path d="M8 5.5v13M16 5.5v13" stroke-width="2.6"/></symbol>
+    <symbol id="i-sound" viewBox="0 0 24 24"><path d="M4 9.5h3.5L12 5.5v13l-4.5-4H4z"/><path d="M15.5 9a4.2 4.2 0 0 1 0 6M18.2 6.5a8 8 0 0 1 0 11"/></symbol>
+    <symbol id="i-mute" viewBox="0 0 24 24"><path d="M4 9.5h3.5L12 5.5v13l-4.5-4H4z"/><path d="M16 9.5l5 5M21 9.5l-5 5"/></symbol>
+    <symbol id="i-phone" viewBox="0 0 24 24"><path d="M6.6 3.5h3l1.5 4.2-2 1.4a11 11 0 0 0 5.8 5.8l1.4-2 4.2 1.5v3a2 2 0 0 1-2.2 2A16.5 16.5 0 0 1 4.6 5.7a2 2 0 0 1 2-2.2z"/></symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="1.8"/><path d="M3.5 6l8.5 7 8.5-7"/></symbol>
+    <symbol id="i-ig" viewBox="0 0 24 24"><rect x="3.5" y="3.5" width="17" height="17" rx="4.8"/><circle cx="12" cy="12" r="4"/><path d="M17.2 6.8h.01" stroke-width="2.4" stroke-linecap="round"/></symbol>
+    <symbol id="i-link" viewBox="0 0 24 24"><path d="M10 14a4.5 4.5 0 0 0 6.4 0l3-3a4.5 4.5 0 0 0-6.4-6.4l-1.2 1.2"/><path d="M14 10a4.5 4.5 0 0 0-6.4 0l-3 3a4.5 4.5 0 0 0 6.4 6.4l1.2-1.2"/></symbol>
+    <symbol id="i-wa" viewBox="0 0 24 24"><path d="M20.5 11.7a8.5 8.5 0 0 1-12.6 7.4L3.5 20.5l1.4-4.2a8.5 8.5 0 1 1 15.6-4.6z"/><path d="M9 7.8c-.6 0-1.3.7-1.3 1.8 0 2.8 3.5 6.5 6.6 6.6 1.2 0 1.9-.8 1.9-1.4l-.2-.6-2-1-.8.9c-1.2-.4-2.6-1.8-3-3l.9-.8-1-2z" fill="currentColor" stroke="none"/></symbol>
+  </svg>
+
+  <!-- ========== ENCABEZADO ========== -->
+  <header class="site-header" id="top">
+    <div class="wrap header-inner">
+      <a class="brand" href="#inicio" aria-label="CG Asesores Contables y Tributarios, ir al inicio">
+        <picture>
+          <source srcset="assets/img/logo-cg.webp" type="image/webp">
+          <img src="assets/img/logo-cg.png" alt="Camila Granados – Asesores contables y tributarios" width="780" height="372">
+        </picture>
+      </a>
+
+      <nav class="main-nav" id="menu-principal" aria-label="Menú principal">
+        <ul>
+          <li><a href="#inicio" data-nav="inicio">Inicio</a></li>
+          <li><a href="#nuestra-firma" data-nav="nuestra-firma">Nuestra firma</a></li>
+          <li><a href="#que-hacemos" data-nav="que-hacemos">Qué hacemos</a></li>
+          <li><a href="#servicios" data-nav="servicios">Servicios</a></li>
+          <li><a href="#contactanos" data-nav="contactanos">Contáctanos</a></li>
+        </ul>
+        <a class="btn btn-primary nav-cta-mobile" href="https://wa.me/573144288780" target="_blank" rel="noopener noreferrer" data-wa="asesoria">
+          <svg class="ico"><use href="#i-wa"/></svg> Solicita tu asesoría
+        </a>
+      </nav>
+
+      <a class="btn btn-primary header-cta" href="https://wa.me/573144288780" target="_blank" rel="noopener noreferrer" data-wa="asesoria">
+        <svg class="ico"><use href="#i-wa"/></svg> Solicita tu asesoría
+      </a>
+
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="menu-principal" aria-label="Abrir menú">
+        <svg class="ico ico-open"><use href="#i-menu"/></svg>
+        <svg class="ico ico-close"><use href="#i-close"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <main id="contenido">
+
+    <!-- =====================================================
+         VISTA 1: INICIO
+         Cada vista (Inicio, Nuestra firma, Qué hacemos,
+         Servicios, Contáctanos) se muestra de forma
+         independiente según el menú. Sin JavaScript, todas
+         las vistas quedan visibles una debajo de otra.
+         ===================================================== -->
+    <div class="view" id="inicio" data-view aria-label="Inicio">
+
+    <!-- Hero con el video como marca de agua de fondo -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-bg" aria-hidden="true">
+        <video id="intro-video" class="intro-video" muted loop playsinline preload="auto"
+               poster="assets/img/video-poster.webp">
+          <source src="assets/video/intro-cg.mp4" type="video/mp4">
+        </video>
+        <img class="video-fallback" src="assets/img/video-poster.jpg" alt="" width="1280" height="720" hidden>
+      </div>
+
+      <div class="wrap hero-content">
+        <div class="hero-copy">
+          <p class="eyebrow">Contadora Pública · Asesoría contable y tributaria</p>
+          <h1 id="hero-title">Tu tranquilidad financiera, <em>nuestro compromiso profesional</em></h1>
+          <p class="hero-sub">Soluciones contables, tributarias y financieras diseñadas para respaldar tus decisiones y fortalecer el crecimiento de tu empresa.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary btn-lg" href="#servicios">Conoce nuestros servicios <svg class="ico"><use href="#i-arrow"/></svg></a>
+            <a class="btn btn-ghost btn-lg" href="https://wa.me/573144288780" target="_blank" rel="noopener noreferrer" data-wa="asesor"><svg class="ico"><use href="#i-wa"/></svg> Habla con un asesor</a>
+          </div>
+          <p class="hero-pillars" aria-label="Nuestro método">Organiza <span aria-hidden="true">·</span> Cumple <span aria-hidden="true">·</span> Analiza <span aria-hidden="true">·</span> Proyecta</p>
+        </div>
+      </div>
+
+      <div class="video-controls" role="group" aria-label="Controles del video de fondo">
+        <button type="button" class="vc-btn" id="vc-play" aria-label="Pausar video">
+          <svg class="ico ico-pause"><use href="#i-pause"/></svg>
+          <svg class="ico ico-play"><use href="#i-play"/></svg>
+        </button>
+        <button type="button" class="vc-btn" id="vc-sound" aria-label="Activar sonido" aria-pressed="false">
+          <svg class="ico ico-mute"><use href="#i-mute"/></svg>
+          <svg class="ico ico-sound"><use href="#i-sound"/></svg>
+        </button>
+      </div>
+    </section>
+
+    <!-- ========== PRESENTACIÓN CORPORATIVA ========== -->
+    <section class="intro band-white" aria-labelledby="intro-title">
+      <div class="wrap intro-grid">
+        <div>
+          <p class="eyebrow">CG Asesores Contables y Tributarios</p>
+          <h2 id="intro-title" class="h2">Detrás de cada cifra hay una decisión que importa</h2>
+        </div>
+        <div class="intro-text">
+          <p>Una contabilidad al día y unos impuestos bien planeados evitan sanciones, liberan tiempo y dan claridad para decidir. Acompañamos a personas naturales, empresas y organizaciones a <strong>organizar</strong> su información, <strong>cumplir</strong> sus obligaciones a tiempo, <strong>analizar</strong> sus resultados y <strong>proyectar</strong> su crecimiento.</p>
+          <p>Contrata solo lo que necesitas o integra varias líneas de servicio según la etapa y la complejidad de tu negocio.</p>
+        </div>
+      </div>
+      <div class="wrap">
+        <dl class="stats">
+          <div class="stat"><dt>años de experiencia de nuestra directora</dt><dd>8+</dd></div>
+          <div class="stat"><dt>acompañamiento cercano y personalizado</dt><dd>100%</dd></div>
+          <div class="stat"><dt>visión contable, tributaria y financiera</dt><dd>360°</dd></div>
+        </dl>
+      </div>
+    </section>
+
+    <!-- ========== PRESENTACIÓN DE LA CEO ========== -->
+    <section class="ceo band-mist" aria-labelledby="ceo-title">
+      <div class="wrap ceo-grid">
+        <div class="ceo-photo">
+          <picture>
+            <source srcset="assets/img/camila-granados.webp" type="image/webp">
+            <img src="assets/img/camila-granados.png" alt="Camila Granados, Contadora Pública y directora de CG Asesores Contables y Tributarios" width="560" height="591" loading="lazy">
+          </picture>
+        </div>
+        <div class="ceo-body">
+          <p class="eyebrow">Perfil profesional</p>
+          <h2 id="ceo-title" class="h2">Camila Granados</h2>
+          <p class="ceo-role">Contadora Pública <span aria-hidden="true">|</span> Dirección de CG Asesores Contables y Tributarios</p>
+          <p>Soy Contadora Pública y fundadora de CG Asesores. Durante más de 8 años he acompañado a personas naturales, empresas y organizaciones en su gestión contable, tributaria y financiera. Mi propósito es convertir la información financiera en una herramienta útil para tomar mejores decisiones.</p>
+          <ul class="checklist">
+            <li><svg class="ico"><use href="#i-check"/></svg>Experiencia en procesos contables, tributarios y financieros.</li>
+            <li><svg class="ico"><use href="#i-check"/></svg>Acompañamiento personalizado, adaptado a la realidad de cada cliente.</li>
+            <li><svg class="ico"><use href="#i-check"/></svg>Responsabilidad y confidencialidad en el manejo de tu información.</li>
+            <li><svg class="ico"><use href="#i-check"/></svg>Compromiso con el cumplimiento normativo y preventivo.</li>
+            <li><svg class="ico"><use href="#i-check"/></svg>Orientación hacia soluciones eficientes y oportunas.</li>
+          </ul>
+          <blockquote class="ceo-quote">“Más que números, somos aliados en tu crecimiento.”</blockquote>
+          <a class="btn btn-primary" href="https://wa.me/573144288780" target="_blank" rel="noopener noreferrer" data-wa="camila"><svg class="ico"><use href="#i-wa"/></svg> Agenda una conversación</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== ICONOS DE SERVICIOS (HOME) ========== -->
+    <section class="lines band-white" aria-labelledby="lines-title">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="eyebrow">Líneas de servicio</p>
+          <h2 id="lines-title" class="h2">Cinco líneas, un solo aliado</h2>
+        </div>
+        <ul class="line-tiles">
+          <li><button type="button" class="line-tile" data-open="modal-contable"><span class="tile-ico"><svg class="ico"><use href="#i-ledger"/></svg></span><span class="tile-name">Gestión contable</span><span class="tile-desc">Tu contabilidad mensual al día y conciliada.</span><span class="tile-more">Ver más <svg class="ico"><use href="#i-arrow"/></svg></span></button></li>
+          <li><button type="button" class="line-tile" data-open="modal-asesoria"><span class="tile-ico"><svg class="ico"><use href="#i-advice"/></svg></span><span class="tile-name">Asesoría</span><span class="tile-desc">Criterio experto para decisiones importantes.</span><span class="tile-more">Ver más <svg class="ico"><use href="#i-arrow"/></svg></span></button></li>
+          <li><button type="button" class="line-tile" data-open="modal-tributario"><span class="tile-ico"><svg class="ico"><use href="#i-tax"/></svg></span><span class="tile-name">Gestión tributaria</span><span class="tile-desc">Declaraciones a tiempo y sin sorpresas.</span><span class="tile-more">Ver más <svg class="ico"><use href="#i-arrow"/></svg></span></button></li>
+          <li><button type="button" class="line-tile" data-open="modal-revisoria"><span class="tile-ico"><svg class="ico"><use href="#i-shield"/></svg></span><span class="tile-name">Revisoría fiscal</span><span class="tile-desc">Control independiente y confianza.</span><span class="tile-more">Ver más <svg class="ico"><use href="#i-arrow"/></svg></span></button></li>
+          <li><button type="button" class="line-tile" data-open="modal-soluciones"><span class="tile-ico"><svg class="ico"><use href="#i-target"/></svg></span><span class="tile-name">Soluciones específicas</span><span class="tile-desc">Trámites y proyectos puntuales.</span><span class="tile-more">Ver más <svg class="ico"><use href="#i-arrow"/></svg></span></button></li>
+        </ul>
+      </div>
+    </section>
+    </div><!-- /vista inicio -->
+
+    <!-- ========== VISTA 2: NUESTRA FIRMA ========== -->
+    <div class="view" id="nuestra-firma" data-view aria-label="Nuestra firma">
+    <section class="firm band-navy" aria-labelledby="firm-title">
+      <div class="wrap">
+        <div class="firm-intro">
+          <p class="eyebrow eyebrow-light">Nuestra firma</p>
+          <h2 id="firm-title" class="h2">Confianza que se construye con cada decisión</h2>
+          <h3 class="h4">Quiénes somos</h3>
+          <p>Somos una firma dedicada al acompañamiento contable, tributario y financiero, que brinda soluciones profesionales orientadas a la organización de la información, el cumplimiento de obligaciones y el fortalecimiento de la gestión empresarial.</p>
+        </div>
+
+        <div class="mv-grid">
+          <article class="mv">
+            <h3 class="h4">Misión</h3>
+            <p>Brindar servicios contables, tributarios y financieros con responsabilidad, ética y atención personalizada, contribuyendo a la adecuada toma de decisiones y al cumplimiento de las obligaciones de nuestros clientes.</p>
+          </article>
+          <article class="mv">
+            <h3 class="h4">Visión</h3>
+            <p>Consolidarnos como una firma reconocida por su confiabilidad, calidad profesional e innovación en la prestación de servicios contables, tributarios y financieros.</p>
+          </article>
+        </div>
+
+        <div class="value">
+          <p class="eyebrow eyebrow-light">Propuesta de valor</p>
+          <p class="value-quote">“Más que gestionar cifras, construimos confianza y acompañamos decisiones.”</p>
+          <ul class="attributes">
+            <li><svg class="ico"><use href="#i-heart"/></svg><strong>Atención personalizada</strong><span>Un trato cercano y una persona que conoce tu caso.</span></li>
+            <li><svg class="ico"><use href="#i-lock"/></svg><strong>Confidencialidad y ética profesional</strong><span>Tu información se maneja con reserva y responsabilidad.</span></li>
+            <li><svg class="ico"><use href="#i-refresh"/></svg><strong>Actualización normativa</strong><span>Seguimiento permanente a los cambios contables y tributarios.</span></li>
+            <li><svg class="ico"><use href="#i-sliders"/></svg><strong>Soluciones adaptadas a cada cliente</strong><span>Servicios que evolucionan con tu negocio.</span></li>
+          </ul>
+        </div>
+
+        <div class="method">
+          <p class="eyebrow eyebrow-light">Nuestro método de acompañamiento</p>
+          <ol class="steps">
+            <li><span class="step-n">01</span><strong>Organizar</strong><span>Ponemos en orden soportes, registros y obligaciones.</span></li>
+            <li><span class="step-n">02</span><strong>Cumplir</strong><span>Presentamos a tiempo con enfoque preventivo.</span></li>
+            <li><span class="step-n">03</span><strong>Analizar</strong><span>Convertimos cifras en información clara para decidir.</span></li>
+            <li><span class="step-n">04</span><strong>Proyectar</strong><span>Planeamos el siguiente paso de tu negocio.</span></li>
+          </ol>
+        </div>
+      </div>
+    </section>
+    </div><!-- /vista nuestra firma -->
+
+    <!-- ========== VISTA 3: QUÉ HACEMOS ========== -->
+    <div class="view" id="que-hacemos" data-view aria-label="Qué hacemos">
+    <section class="what band-white" aria-labelledby="what-title">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="eyebrow">Qué hacemos</p>
+          <h2 id="what-title" class="h2">Un portafolio a tu medida</h2>
+          <p class="lead">Ponemos nuestra experiencia al servicio de cada cliente para organizar la información, cumplir sus obligaciones y acompañar decisiones con visión de negocio.</p>
+        </div>
+
+        <div class="what-grid">
+          <article class="what-card" id="linea-contable">
+            <div class="wc-head"><span class="tile-ico"><svg class="ico"><use href="#i-ledger"/></svg></span><p class="wc-tag">CG Contable</p></div>
+            <h3 class="h3">Gestión contable mensual</h3>
+            <p>Organización, registro, conciliación, seguimiento y presentación de información contable para apoyar el control de las operaciones empresariales.</p>
+            <p class="wc-levels">Planes Esencial · Plus · Premium</p>
+            <div class="wc-actions">
+              <button type="button" class="btn btn-soft" data-open="modal-contable">Ver detalles</button>
+              <a class="btn btn-link" href="https://wa.me/573144288780" target="_blank" rel="noopener noreferrer" data-wa="cotizar" data-service="Gestión contable mensual (CG Contable)"><svg class="ico"><use href="#i-wa"/></svg> Cotizar</a>
+            </div>
+          </article>
+
+          <article class="what-card" id="linea-asesoria">
+            <div class="wc-head"><span class="tile-ico"><svg class="ico"><use href="#i-advice"/></svg></span><p class="wc-tag">CG Asesoría</p></div>
+            <h3 class="h3">Orientación profesional</h3>
+            <p>Acompañamiento especializado en decisiones contables, tributarias, administrativas y financieras.</p>
+            <p class="wc-levels">Planes Esencial · Plus · Premium</p>
+            <div class="wc-actions">
+              <button type="button" class="btn btn-soft" data-open="modal-asesoria">Ver detalles</button>
+              <a class="btn btn-link" href="https://wa.me/573144288780" target="_blank" rel="noopener noreferrer" data-wa="cotizar" data-service="Orientación profesional (CG Asesoría)"><svg class="ico"><use href="#i-wa"/></svg> Cotizar</a>
+            </div>
+          </article>
+
+          <article class="what-card" id="linea-tributario">
+            <div class="wc-head"><span class="tile-ico"><svg class="ico"><use href="#i-tax"/></svg></span><p class="wc-tag">CG Tributario</p></div>
+            <h3 class="h3">Preparación y presentación de impuestos</h3>
+            <p>Gestión de obligaciones tributarias, preparación de declaraciones y acompañamiento en el cumplimiento normativo.</p>
+            <p class="wc-levels">Planes Esencial · Plus · Premium</p>
+            <div class="wc-actions">
+              <button type="button" class="btn btn-soft" data-open="modal-tributario">Ver detalles</button>
+              <a class="btn btn-link" href="https://wa.me/573144288780" target="_blank" rel="noopener noreferrer" data-wa="cotizar" data-service="Preparación y presentación de impuestos (CG Tributario)"><svg class="ico"><use href="#i-wa"/></svg> Cotizar</a>
+            </div>
+          </article>
+
+          <article class="what-card" id="linea-revisoria">
+            <div class="wc-head"><span class="tile-ico"><svg class="ico"><use href="#i-shield"/></svg></span><p class="wc-tag">CG Revisoría fiscal</p></div>
+            <h3 class="h3">Independencia, control y confianza</h3>
+            <p>Servicios profesionales de revisoría fiscal, cuando correspondan, desarrollados bajo criterios de independencia, ética y normativa aplicable.</p>
+            <p class="wc-levels">Planes Esencial · Plus</p>
+            <div class="wc-actions">
+              <button type="button" class="btn btn-soft" data-open="modal-revisoria">Ver detalles</button>
+              <a class="btn btn-link" href="https://wa.me/573144288780" target="_blank" rel="noopener noreferrer" data-wa="cotizar" data-service="Revisoría fiscal (CG Revisoría)"><svg class="ico"><use href="#i-wa"/></svg> Cotizar</a>
+            </div>
+          </article>
+
+          <article class="what-card" id="linea-soluciones">
+            <div class="wc-head"><span class="tile-ico"><svg class="ico"><use href="#i-target"/></svg></span><p class="wc-tag">CG Soluciones específicas</p></div>
+            <h3 class="h3">Servicios por evento, trámite o proyecto</h3>
+            <p>Atención especializada para necesidades particulares que requieren una solución contable, tributaria, laboral o financiera.</p>
+            <p class="wc-levels">Formalización · Diagnósticos · Implementaciones · Informes</p>
+            <div class="wc-actions">
+              <button type="button" class="btn btn-soft" data-open="modal-soluciones">Ver detalles</button>
+              <a class="btn btn-link" href="https://wa.me/573144288780" target="_blank" rel="noopener noreferrer" data-wa="cotizar" data-service="Soluciones específicas (servicio por evento o proyecto)"><svg class="ico"><use href="#i-wa"/></svg> Cotizar</a>
+            </div>
+          </article>
+
+          <aside class="what-card what-help">
+            <p class="wc-tag">¿Qué necesitas hoy?</p>
+            <ul class="need-list">
+              <li><button type="button" data-open="modal-contable">Delegar mi contabilidad <svg class="ico"><use href="#i-arrow"/></svg></button></li>
+              <li><button type="button" data-open="modal-asesoria">Acompañamiento experto <svg class="ico"><use href="#i-arrow"/></svg></button></li>
+              <li><button type="button" data-open="modal-tributario">Solo impuestos <svg class="ico"><use href="#i-arrow"/></svg></button></li>
+              <li><button type="button" data-open="modal-revisoria">Control independiente <svg class="ico"><use href="#i-arrow"/></svg></button></li>
+              <li><a href="#servicios">Una necesidad puntual <svg class="ico"><use href="#i-arrow"/></svg></a></li>
+            </ul>
+          </aside>
+        </div>
+      </div>
+    </section>
+    </div><!-- /vista qué hacemos -->
+
+    <!-- ========== VISTA 4: SERVICIOS (CATÁLOGO) ========== -->
+    <div class="view" id="servicios" data-view aria-label="Servicios">
+    <section class="services band-mist" aria-labelledby="services-title">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="eyebrow">Servicios</p>
+          <h2 id="services-title" class="h2">Catálogo de servicios profesionales</h2>
+          <p class="lead">Cada servicio se define según el alcance, la información disponible, la complejidad y los entregables. Puede contratarse de forma independiente o complementar un plan mensual.</p>
+        </div>
+
+        <div class="filters" role="group" aria-label="Filtrar servicios por área">
+          <button type="button" class="chip is-active" data-filter="todos" aria-pressed="true">Todos</button>
+          <button type="button" class="chip" data-filter="empresa" aria-pressed="false">Empresa y trámites</button>
+          <button type="button" class="chip" data-filter="contable" aria-pressed="false">Contable</button>
+          <button type="button" class="chip" data-filter="tributario" aria-pressed="false">Tributario</button>
+          <button type="button" class="chip" data-filter="laboral" aria-pressed="false">Laboral</button>
+          <button type="button" class="chip" data-filter="financiero" aria-pressed="false">Financiero</button>
+        </div>
+        <p class="filter-status sr-only" aria-live="polite" id="filter-status"></p>
+
+        <div class="svc-grid">
+          <article class="svc" data-cat="empresa">
+            <div class="svc-head"><span class="tile-ico"><svg class="ico"><use href="#i-building"/></svg></span><h3 class="h4">Formalización y actualizaciones</h3></div>
+            <p>Ponemos en marcha tu empresa o negocio con sus registros en regla desde el primer día.</p>
+            <ul class="svc-list">
+              <li>Constitución y puesta en marcha contable.</li>
+              <li>RUT, Cámara de Comercio y RUB.</li>
+              <li>Actualizaciones y trámites.</li>
+            </ul>
+            <div class="svc-actions">
+              <a class="btn btn-soft btn-sm" href="https://wa.me/573144288780" target="_blank" rel="noopener noreferrer" data-wa="info" data-service="Formalización y actualizaciones">Solicitar información</a>
+              <a class="btn btn-primary btn-sm" href="#contact-form" data-quote="Formalización y actualizaciones">Cotizar este servicio</a>
+            </div>
+          </article>
+
+          <article class="svc" data-cat="contable">
+            <div class="svc-head"><span class="tile-ico"><svg class="ico"><use href="#i-search"/></svg></span><h3 class="h4">Diagnóstico y depuración</h3></div>
+            <p>Revisamos el estado real de tu contabilidad y corregimos lo que está pendiente.</p>
+            <ul class="svc-list">
+              <li>Revisión del estado contable.</li>
+              <li>Depuración de saldos y conciliaciones.</li>
+              <li>Reconstrucción de periodos.</li>
+            </ul>
+            <div class="svc-actions">
+              <a class="btn btn-soft btn-sm" href="https://wa.me/573144288780" target="_blank" rel="noopener noreferrer" data-wa="info" data-service="Diagnóstico y depuración contable">Solicitar información</a>
+              <a class="btn btn-primary btn-sm" href="#contact-form" data-quote="Diagnóstico y depuración">Cotizar este servicio</a>
+            </div>
+          </article>
+
+          <article class="svc" data-cat="tributario">
+            <div class="svc-head"><span class="tile-ico"><svg class="ico"><use href="#i-receipt"/></svg></span><h3 class="h4">Tributario extraordinario</h3></div>
+            <p>Atendemos obligaciones tributarias puntuales y situaciones con la autoridad fiscal.</p>
+            <ul class="svc-list">
+              <li>Declaraciones de renta y correcciones.</li>
+              <li>Información exógena y conciliación fiscal.</li>
+              <li>Acompañamiento ante requerimientos.</li>
+            </ul>
+            <div class="svc-actions">
+              <a class="btn btn-soft btn-sm" href="https://wa.me/573144288780" target="_blank" rel="noopener noreferrer" data-wa="info" data-service="Tributario extraordinario (renta, exógena, requerimientos)">Solicitar información</a>
+              <a class="btn btn-primary btn-sm" href="#contact-form" data-quote="Tributario extraordinario">Cotizar este servicio</a>
+            </div>
+          </article>
+
+          <article class="svc" data-cat="laboral">
+            <div class="svc-head"><span class="tile-ico"><svg class="ico"><use href="#i-users"/></svg></span><h3 class="h4">Laboral y nómina</h3></div>
+            <p>Gestionamos las obligaciones con tu equipo de trabajo de forma correcta y oportuna.</p>
+            <ul class="svc-list">
+              <li>Liquidaciones laborales.</li>
+              <li>Seguridad social y novedades.</li>
+              <li>Nómina electrónica.</li>
+            </ul>
+            <div class="svc-actions">
+              <a class="btn btn-soft btn-sm" href="https://wa.me/573144288780" target="_blank" rel="noopener noreferrer" data-wa="info" data-service="Laboral y nómina">Solicitar información</a>
+              <a class="btn btn-primary btn-sm" href="#contact-form" data-quote="Laboral y nómina">Cotizar este servicio</a>
+            </div>
+          </article>
+
+          <article class="svc" data-cat="contable tributario">
+            <div class="svc-head"><span class="tile-ico"><svg class="ico"><use href="#i-einvoice"/></svg></span><h3 class="h4">Facturación y documentos electrónicos</h3></div>
+            <p>Implementamos y ajustamos tus documentos electrónicos para que cumplan los requisitos vigentes.</p>
+            <ul class="svc-list">
+              <li>Implementación o ajuste de facturación electrónica.</li>
+              <li>Notas y documento soporte.</li>
+              <li>Organización de soportes.</li>
+            </ul>
+            <div class="svc-actions">
+              <a class="btn btn-soft btn-sm" href="https://wa.me/573144288780" target="_blank" rel="noopener noreferrer" data-wa="info" data-service="Facturación y documentos electrónicos">Solicitar información</a>
+              <a class="btn btn-primary btn-sm" href="#contact-form" data-quote="Facturación y documentos electrónicos">Cotizar este servicio</a>
+            </div>
+          </article>
+
+          <article class="svc" data-cat="contable financiero">
+            <div class="svc-head"><span class="tile-ico"><svg class="ico"><use href="#i-cert"/></svg></span><h3 class="h4">Informes y certificaciones</h3></div>
+            <p>Preparamos la información financiera que te piden bancos, socios, clientes o entidades.</p>
+            <ul class="svc-list">
+              <li>Certificaciones contables.</li>
+              <li>Estados financieros especiales.</li>
+              <li>Reportes para bancos, socios o terceros.</li>
+            </ul>
+            <div class="svc-actions">
+              <a class="btn btn-soft btn-sm" href="https://wa.me/573144288780" target="_blank" rel="noopener noreferrer" data-wa="info" data-service="Informes y certificaciones">Solicitar información</a>
+              <a class="btn btn-primary btn-sm" href="#contact-form" data-quote="Informes y certificaciones">Cotizar este servicio</a>
+            </div>
+          </article>
+
+          <article class="svc" data-cat="financiero">
+            <div class="svc-head"><span class="tile-ico"><svg class="ico"><use href="#i-chart"/></svg></span><h3 class="h4">Planeación y análisis financiero</h3></div>
+            <p>Convertimos tus cifras en indicadores y escenarios para decidir con mayor seguridad.</p>
+            <ul class="svc-list">
+              <li>Presupuestos y flujo de caja.</li>
+              <li>Márgenes, liquidez e indicadores.</li>
+              <li>Análisis de escenarios para la toma de decisiones.</li>
+            </ul>
+            <div class="svc-actions">
+              <a class="btn btn-soft btn-sm" href="https://wa.me/573144288780" target="_blank" rel="noopener noreferrer" data-wa="info" data-service="Planeación y análisis financiero">Solicitar información</a>
+              <a class="btn btn-primary btn-sm" href="#contact-form" data-quote="Planeación y análisis financiero">Cotizar este servicio</a>
+            </div>
+          </article>
+
+          <article class="svc" data-cat="empresa tributario">
+            <div class="svc-head"><span class="tile-ico"><svg class="ico"><use href="#i-landmark"/></svg></span><h3 class="h4">Acompañamiento ante entidades</h3></div>
+            <p>Te representamos técnicamente y respondemos con argumentos ante las entidades de control.</p>
+            <ul class="svc-list">
+              <li>DIAN, Cámara de Comercio y entidades territoriales.</li>
+              <li>Seguimiento de requerimientos.</li>
+              <li>Apoyo en respuestas técnicas.</li>
+            </ul>
+            <div class="svc-actions">
+              <a class="btn btn-soft btn-sm" href="https://wa.me/573144288780" target="_blank" rel="noopener noreferrer" data-wa="info" data-service="Acompañamiento ante entidades (DIAN, Cámara de Comercio, entidades territoriales)">Solicitar información</a>
+              <a class="btn btn-primary btn-sm" href="#contact-form" data-quote="Acompañamiento ante entidades">Cotizar este servicio</a>
+            </div>
+          </article>
+        </div>
+        <p class="note">Los honorarios se cotizan según el alcance de cada caso. Escríbenos y te enviamos una propuesta.</p>
+      </div>
+    </section>
+    </div><!-- /vista servicios -->
+
+    <!-- ========== VISTA 5: CONTÁCTANOS ========== -->
+    <div class="view" id="contactanos" data-view aria-label="Contáctanos">
+    <section class="contact band-white" aria-labelledby="contact-title">
+      <div class="wrap contact-grid">
+        <div class="contact-info">
+          <p class="eyebrow">Contáctanos</p>
+          <h2 id="contact-title" class="h2">Hablemos de tu caso</h2>
+          <p>Cuéntanos qué necesitas y te respondemos con una propuesta clara. Atendemos personas naturales, empresas y organizaciones.</p>
+
+          <ul class="channels">
+            <li>
+              <a class="channel" href="https://wa.me/573144288780" target="_blank" rel="noopener noreferrer" data-wa="asesoria">
+                <span class="ch-ico ch-wa"><svg class="ico"><use href="#i-wa"/></svg></span>
+                <span><span class="ch-label">WhatsApp comercial</span><span class="ch-value">+57 314 428 8780</span></span>
+              </a>
+            </li>
+            <li>
+              <a class="channel" href="tel:+573008623090">
+                <span class="ch-ico"><svg class="ico"><use href="#i-phone"/></svg></span>
+                <span><span class="ch-label">Línea alterna</span><span class="ch-value">+57 300 862 3090</span></span>
+              </a>
+            </li>
+            <li>
+              <a class="channel" href="mailto:camilagranadoscontadora@gmail.com">
+                <span class="ch-ico"><svg class="ico"><use href="#i-mail"/></svg></span>
+                <span><span class="ch-label">Correo electrónico</span><span class="ch-value ch-email">camilagranadoscontadora@gmail.com</span></span>
+              </a>
+            </li>
+            <li>
+              <a class="channel" href="https://www.instagram.com/camilagranadoscontadora/" target="_blank" rel="noopener noreferrer">
+                <span class="ch-ico"><svg class="ico"><use href="#i-ig"/></svg></span>
+                <span><span class="ch-label">Instagram</span><span class="ch-value">@camilagranadoscontadora</span></span>
+              </a>
+            </li>
+            <li>
+              <a class="channel" href="https://www.atom.bio/camilagranadoscontadora" target="_blank" rel="noopener noreferrer">
+                <span class="ch-ico"><svg class="ico"><use href="#i-link"/></svg></span>
+                <span><span class="ch-label">Todos nuestros enlaces</span><span class="ch-value">atom.bio/camilagranadoscontadora</span></span>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="form-card">
+          <h3 class="h3">Solicita una cotización</h3>
+          <p class="form-intro">Completa los datos y elige cómo enviarnos tu solicitud. No guardamos esta información en el sitio web.</p>
+          <form id="contact-form" novalidate>
+            <div class="field">
+              <label for="f-nombre">Nombre completo o razón social</label>
+              <input id="f-nombre" name="nombre" type="text" autocomplete="name" maxlength="90" required>
+              <p class="field-error" id="e-nombre"></p>
+            </div>
+            <div class="field-row">
+              <div class="field">
+                <label for="f-email">Correo electrónico</label>
+                <input id="f-email" name="email" type="email" autocomplete="email" inputmode="email" maxlength="120" placeholder="nombre@correo.com" required>
+                <p class="field-error" id="e-email"></p>
+              </div>
+              <div class="field">
+                <label for="f-telefono">Teléfono / celular</label>
+                <input id="f-telefono" name="telefono" type="tel" autocomplete="tel" inputmode="tel" maxlength="20" placeholder="300 000 0000" required>
+                <p class="field-error" id="e-telefono"></p>
+              </div>
+            </div>
+            <div class="field-row">
+              <div class="field">
+                <label for="f-tipo">Tipo de cliente</label>
+                <select id="f-tipo" name="tipo" required>
+                  <option value="">Selecciona…</option>
+                  <option>Persona natural</option>
+                  <option>Empresa</option>
+                  <option>Organización sin ánimo de lucro</option>
+                  <option>Propiedad horizontal</option>
+                  <option>Otro</option>
+                </select>
+                <p class="field-error" id="e-tipo"></p>
+              </div>
+              <div class="field">
+                <label for="f-ciudad">Ciudad <span class="optional">(opcional)</span></label>
+                <input id="f-ciudad" name="ciudad" type="text" autocomplete="address-level2" maxlength="60">
+              </div>
+            </div>
+            <div class="field">
+              <label for="f-servicio">Servicio de interés</label>
+              <select id="f-servicio" name="servicio" required>
+                <option value="">Selecciona…</option>
+                <optgroup label="Líneas de servicio">
+                  <option>Gestión contable mensual</option>
+                  <option>Asesoría y orientación profesional</option>
+                  <option>Preparación y presentación de impuestos</option>
+                  <option>Revisoría fiscal</option>
+                </optgroup>
+                <optgroup label="Soluciones específicas">
+                  <option>Formalización y actualizaciones</option>
+                  <option>Diagnóstico y depuración</option>
+                  <option>Tributario extraordinario</option>
+                  <option>Laboral y nómina</option>
+                  <option>Facturación y documentos electrónicos</option>
+                  <option>Informes y certificaciones</option>
+                  <option>Planeación y análisis financiero</option>
+                  <option>Acompañamiento ante entidades</option>
+                </optgroup>
+                <option>Otro / no estoy seguro</option>
+              </select>
+              <p class="field-error" id="e-servicio"></p>
+            </div>
+            <div class="field">
+              <label for="f-mensaje">Cuéntanos brevemente tu necesidad</label>
+              <textarea id="f-mensaje" name="mensaje" rows="4" maxlength="800" required></textarea>
+              <p class="field-hint"><span id="f-count">0</span>/800 caracteres</p>
+              <p class="field-error" id="e-mensaje"></p>
+            </div>
+            <!-- Campo trampa contra bots: debe quedar vacío -->
+            <div class="hp" aria-hidden="true">
+              <label for="f-web">No llenar este campo</label>
+              <input id="f-web" name="web" type="text" tabindex="-1" autocomplete="off">
+            </div>
+            <div class="field check">
+              <input id="f-datos" name="datos" type="checkbox" required>
+              <label for="f-datos">Autorizo el tratamiento de mis datos personales para atender esta solicitud, conforme a la <a href="politica-privacidad.html">Política de tratamiento de datos</a> (Ley 1581 de 2012).</label>
+              <p class="field-error" id="e-datos"></p>
+            </div>
+            <div class="form-actions">
+              <button type="submit" class="btn btn-primary" data-via="whatsapp"><svg class="ico"><use href="#i-wa"/></svg> Enviar por WhatsApp</button>
+              <button type="submit" class="btn btn-ghost" data-via="email"><svg class="ico"><use href="#i-mail"/></svg> Enviar por correo</button>
+            </div>
+            <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+    </div><!-- /vista contáctanos -->
+  </main>
+
+  <!-- ========== PIE DE PÁGINA ========== -->
+  <footer class="site-footer">
+    <div class="wrap footer-grid">
+      <div class="footer-brand">
+        <picture class="footer-logo">
+          <source srcset="assets/img/logo-cg.webp" type="image/webp">
+          <img src="assets/img/logo-cg.png" alt="Camila Granados – Asesores contables y tributarios" width="780" height="372" loading="lazy">
+        </picture>
+        <p>Servicios contables, tributarios, financieros y de revisoría fiscal para personas naturales, empresas y organizaciones.</p>
+      </div>
+      <nav aria-label="Enlaces del pie de página">
+        <p class="footer-title">Navegación</p>
+        <ul>
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#nuestra-firma">Nuestra firma</a></li>
+          <li><a href="#que-hacemos">Qué hacemos</a></li>
+          <li><a href="#servicios">Servicios</a></li>
+          <li><a href="#contactanos">Contáctanos</a></li>
+        </ul>
+      </nav>
+      <div>
+        <p class="footer-title">Contacto</p>
+        <ul>
+          <li><a href="https://wa.me/573144288780" target="_blank" rel="noopener noreferrer" data-wa="asesoria">WhatsApp +57 314 428 8780</a></li>
+          <li><a href="tel:+573008623090">+57 300 862 3090</a></li>
+          <li><a href="mailto:camilagranadoscontadora@gmail.com">camilagranadoscontadora@gmail.com</a></li>
+          <li><a href="https://www.instagram.com/camilagranadoscontadora/" target="_blank" rel="noopener noreferrer">@camilagranadoscontadora</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="wrap footer-legal">
+      <p>© <span id="year">2026</span> CG Asesores Contables y Tributarios · Camila Granados, Contadora Pública. Todos los derechos reservados.</p>
+      <p><a href="politica-privacidad.html">Política de tratamiento de datos personales</a></p>
+    </div>
+  </footer>
+
+  <!-- Botón flotante de WhatsApp -->
+  <a class="wa-float" href="https://wa.me/573144288780" target="_blank" rel="noopener noreferrer" data-wa="asesoria" aria-label="Escríbenos por WhatsApp">
+    <svg class="ico"><use href="#i-wa"/></svg>
+  </a>
+
+  <!-- ========== VENTANAS MODALES DE DETALLE ========== -->
+  <dialog class="modal" id="modal-contable" aria-labelledby="mt-contable">
+    <div class="modal-inner">
+      <button type="button" class="modal-close" data-close aria-label="Cerrar"><svg class="ico"><use href="#i-close"/></svg></button>
+      <p class="eyebrow">CG Contable</p>
+      <h2 class="h3" id="mt-contable">Gestión contable mensual</h2>
+      <p>Llevamos tu contabilidad mes a mes: registramos, conciliamos y te entregamos información confiable para controlar tu operación. Elige el nivel que corresponde a la etapa de tu negocio.</p>
+      <div class="table-scroll" tabindex="0" role="region" aria-label="Comparativo de planes de gestión contable">
+        <table class="plans">
+          <caption class="sr-only">Comparativo de planes Esencial, Plus y Premium</caption>
+          <thead><tr><th scope="col">Servicio / alcance</th><th scope="col">Esencial</th><th scope="col">Plus</th><th scope="col">Premium</th></tr></thead>
+          <tbody>
+            <tr><th scope="row">Registro y clasificación de operaciones</th><td class="yes">Incluido</td><td class="yes">Incluido</td><td class="yes">Incluido</td></tr>
+            <tr><th scope="row">Revisión de soportes y conciliaciones bancarias</th><td class="yes">Incluido</td><td class="yes">Incluido</td><td class="yes">Incluido</td></tr>
+            <tr><th scope="row">Estados financieros</th><td>Anual – básicos</td><td>Semestral + indicadores</td><td>Mensuales + indicadores</td></tr>
+            <tr><th scope="row">Cuentas por cobrar y por pagar</th><td class="no">—</td><td class="yes">Incluido</td><td class="yes">Incluido</td></tr>
+            <tr><th scope="row">Nómina, seguridad social y prestaciones</th><td class="no">—</td><td class="yes">Incluido</td><td class="yes">Incluido</td></tr>
+            <tr><th scope="row">Impuestos periódicos</th><td class="scope">Según alcance</td><td class="yes">Incluido</td><td class="yes">Incluido</td></tr>
+            <tr><th scope="row">Información exógena y conciliación fiscal</th><td class="no">—</td><td class="yes">Incluido</td><td class="yes">Incluido</td></tr>
+            <tr><th scope="row">Planeación tributaria</th><td class="no">—</td><td class="yes">Incluido</td><td class="yes">Incluido</td></tr>
+            <tr><th scope="row">Análisis financiero e indicadores</th><td class="no">—</td><td class="yes">Incluido</td><td class="yes">Incluido</td></tr>
+            <tr><th scope="row">Presupuesto y flujo de caja</th><td class="no">—</td><td class="no">—</td><td class="yes">Incluido</td></tr>
+            <tr><th scope="row">Reuniones gerenciales</th><td class="yes">Incluido</td><td class="yes">Incluido</td><td class="yes">Incluido</td></tr>
+            <tr><th scope="row">Acompañamiento estratégico</th><td>Seguimiento general</td><td>Atención prioritaria</td><td>Acompañamiento permanente</td></tr>
+            <tr class="ideal"><th scope="row">Ideal para</th><td>Negocios que necesitan orden contable básico</td><td>Negocios que requieren análisis y planeación tributaria</td><td>Empresas que buscan tercerizar su departamento contable</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="legend"><span class="lg yes">Incluido</span> forma parte del plan · <span class="lg scope">Según alcance</span> se define según obligaciones y volumen · <span class="lg no">—</span> no está incluido en ese nivel.</p>
+      <div class="modal-actions">
+        <a class="btn btn-primary" href="https://wa.me/573144288780" target="_blank" rel="noopener noreferrer" data-wa="cotizar" data-service="Gestión contable mensual (CG Contable)"><svg class="ico"><use href="#i-wa"/></svg> Cotizar por WhatsApp</a>
+        <a class="btn btn-ghost" href="#contact-form" data-quote="Gestión contable mensual" data-close>Solicitar propuesta</a>
+      </div>
+    </div>
+  </dialog>
+
+  <dialog class="modal" id="modal-asesoria" aria-labelledby="mt-asesoria">
+    <div class="modal-inner">
+      <button type="button" class="modal-close" data-close aria-label="Cerrar"><svg class="ico"><use href="#i-close"/></svg></button>
+      <p class="eyebrow">CG Asesoría</p>
+      <h2 class="h3" id="mt-asesoria">Orientación profesional</h2>
+      <p>Acompañamiento especializado para tomar decisiones contables, tributarias, administrativas y financieras con información clara y criterio profesional.</p>
+      <ul class="checklist">
+        <li><svg class="ico"><use href="#i-check"/></svg>Consultas sobre obligaciones contables y tributarias de tu negocio.</li>
+        <li><svg class="ico"><use href="#i-check"/></svg>Orientación antes de decisiones con impacto fiscal o financiero.</li>
+        <li><svg class="ico"><use href="#i-check"/></svg>Revisión de la información que te entrega tu equipo contable.</li>
+        <li><svg class="ico"><use href="#i-check"/></svg>Reuniones de seguimiento según el nivel contratado.</li>
+      </ul>
+      <p class="levels-note"><strong>Niveles disponibles:</strong> Esencial · Plus · Premium. El alcance de cada nivel se define contigo en la propuesta.</p>
+      <div class="modal-actions">
+        <a class="btn btn-primary" href="https://wa.me/573144288780" target="_blank" rel="noopener noreferrer" data-wa="cotizar" data-service="Orientación profesional (CG Asesoría)"><svg class="ico"><use href="#i-wa"/></svg> Cotizar por WhatsApp</a>
+        <a class="btn btn-ghost" href="#contact-form" data-quote="Asesoría y orientación profesional" data-close>Solicitar propuesta</a>
+      </div>
+    </div>
+  </dialog>
+
+  <dialog class="modal" id="modal-tributario" aria-labelledby="mt-tributario">
+    <div class="modal-inner">
+      <button type="button" class="modal-close" data-close aria-label="Cerrar"><svg class="ico"><use href="#i-close"/></svg></button>
+      <p class="eyebrow">CG Tributario</p>
+      <h2 class="h3" id="mt-tributario">Preparación y presentación de impuestos</h2>
+      <p>Gestionamos tus obligaciones tributarias con enfoque preventivo: preparamos y presentamos tus declaraciones a tiempo y te acompañamos en el cumplimiento normativo.</p>
+      <ul class="checklist">
+        <li><svg class="ico"><use href="#i-check"/></svg>Declaración de renta de personas naturales y jurídicas.</li>
+        <li><svg class="ico"><use href="#i-check"/></svg>Impuestos periódicos según tus responsabilidades en el RUT.</li>
+        <li><svg class="ico"><use href="#i-check"/></svg>Información exógena y conciliación fiscal.</li>
+        <li><svg class="ico"><use href="#i-check"/></svg>Planeación tributaria y seguimiento al calendario de vencimientos.</li>
+      </ul>
+      <p class="levels-note"><strong>Niveles disponibles:</strong> Esencial · Plus · Premium. El alcance se define según tus obligaciones y volumen de operaciones.</p>
+      <div class="modal-actions">
+        <a class="btn btn-primary" href="https://wa.me/573144288780" target="_blank" rel="noopener noreferrer" data-wa="cotizar" data-service="Preparación y presentación de impuestos (CG Tributario)"><svg class="ico"><use href="#i-wa"/></svg> Cotizar por WhatsApp</a>
+        <a class="btn btn-ghost" href="#contact-form" data-quote="Preparación y presentación de impuestos" data-close>Solicitar propuesta</a>
+      </div>
+    </div>
+  </dialog>
+
+  <dialog class="modal" id="modal-revisoria" aria-labelledby="mt-revisoria">
+    <div class="modal-inner">
+      <button type="button" class="modal-close" data-close aria-label="Cerrar"><svg class="ico"><use href="#i-close"/></svg></button>
+      <p class="eyebrow">CG Revisoría fiscal</p>
+      <h2 class="h3" id="mt-revisoria">Independencia, control y confianza</h2>
+      <p>La revisoría fiscal se presta con independencia frente a las funciones administrativas y operativas de la entidad. Su alcance se define según la naturaleza, complejidad y riesgos de la organización, con el objetivo de fortalecer el cumplimiento, la transparencia y la confianza en la información.</p>
+      <p class="mini-title">Nuestro proceso</p>
+      <ol class="mini-steps">
+        <li><span>01</span>Planeación</li>
+        <li><span>02</span>Control interno</li>
+        <li><span>03</span>Pruebas selectivas</li>
+        <li><span>04</span>Informes</li>
+      </ol>
+      <div class="plan-pair">
+        <div class="plan">
+          <p class="plan-name">Esencial</p>
+          <p class="plan-sub">Cobertura fundamental</p>
+          <ul><li>Cumplimiento formal.</li><li>Lectura de estados e informes.</li><li>Observaciones y recomendaciones.</li></ul>
+        </div>
+        <div class="plan">
+          <p class="plan-name">Plus</p>
+          <p class="plan-sub">Mayor profundidad</p>
+          <ul><li>Todo lo del plan Esencial.</li><li>Nómina, impuestos, tesorería y cartera.</li><li>Seguimiento a hallazgos.</li></ul>
+        </div>
+      </div>
+      <div class="modal-actions">
+        <a class="btn btn-primary" href="https://wa.me/573144288780" target="_blank" rel="noopener noreferrer" data-wa="cotizar" data-service="Revisoría fiscal (CG Revisoría)"><svg class="ico"><use href="#i-wa"/></svg> Cotizar por WhatsApp</a>
+        <a class="btn btn-ghost" href="#contact-form" data-quote="Revisoría fiscal" data-close>Solicitar propuesta</a>
+      </div>
+    </div>
+  </dialog>
+
+  <dialog class="modal" id="modal-soluciones" aria-labelledby="mt-soluciones">
+    <div class="modal-inner">
+      <button type="button" class="modal-close" data-close aria-label="Cerrar"><svg class="ico"><use href="#i-close"/></svg></button>
+      <p class="eyebrow">CG Soluciones específicas</p>
+      <h2 class="h3" id="mt-soluciones">Servicios por evento, trámite o proyecto</h2>
+      <p>Para necesidades puntuales que requieren una solución contable, tributaria, laboral o financiera. Cada servicio se define por alcance, información disponible, complejidad y entregables, y puede contratarse solo o como complemento de un plan mensual.</p>
+      <ul class="sol-grid">
+        <li><svg class="ico"><use href="#i-building"/></svg>Formalización y actualizaciones</li>
+        <li><svg class="ico"><use href="#i-search"/></svg>Diagnóstico y depuración</li>
+        <li><svg class="ico"><use href="#i-receipt"/></svg>Tributario extraordinario</li>
+        <li><svg class="ico"><use href="#i-users"/></svg>Laboral y nómina</li>
+        <li><svg class="ico"><use href="#i-einvoice"/></svg>Facturación y documentos electrónicos</li>
+        <li><svg class="ico"><use href="#i-cert"/></svg>Informes y certificaciones</li>
+        <li><svg class="ico"><use href="#i-chart"/></svg>Planeación y análisis financiero</li>
+        <li><svg class="ico"><use href="#i-landmark"/></svg>Acompañamiento ante entidades</li>
+      </ul>
+      <div class="modal-actions">
+        <a class="btn btn-primary" href="#servicios" data-close>Ver catálogo completo <svg class="ico"><use href="#i-arrow"/></svg></a>
+        <a class="btn btn-ghost" href="https://wa.me/573144288780" target="_blank" rel="noopener noreferrer" data-wa="cotizar" data-service="Soluciones específicas"><svg class="ico"><use href="#i-wa"/></svg> Cotizar por WhatsApp</a>
+      </div>
+    </div>
+  </dialog>
+
+  <script src="assets/js/config.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

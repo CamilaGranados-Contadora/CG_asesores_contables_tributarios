@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es-CO">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Página no encontrada | CG Asesores Contables y Tributarios</title>
+  <meta name="robots" content="noindex">
+  <link rel="icon" href="/favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600&family=Montserrat:wght@400;600&display=swap">
+  <style>
+    :root { --navy:#0b1e3d; --blue:#1659b8; --gold:#b39257; --muted:#55657c; }
+    * { box-sizing: border-box; }
+    body { margin:0; min-height:100vh; display:grid; place-items:center; background:linear-gradient(180deg,#eceef1,#e3e6ea); font-family:"Montserrat",system-ui,sans-serif; color:var(--navy); padding:24px; text-align:center; }
+    .box { max-width:520px; display:grid; gap:1rem; justify-items:center; }
+    .code { font-family:"Cormorant Garamond",Georgia,serif; font-size:6rem; line-height:1; color:var(--blue); font-weight:600; }
+    h1 { font-family:"Cormorant Garamond",Georgia,serif; font-size:2rem; margin:0; }
+    p { color:var(--muted); margin:0; line-height:1.6; }
+    a { display:inline-block; margin-top:.5rem; padding:.85rem 1.4rem; border-radius:999px; background:var(--navy); color:#fff; text-decoration:none; font-weight:600; }
+    a:hover { background:#0f3f88; }
+    .rule { width:40px; height:1.5px; background:var(--gold); }
+  </style>
+</head>
+<body>
+  <div class="box">
+    <p class="code">404</p>
+    <div class="rule"></div>
+    <h1>No encontramos esta página</h1>
+    <p>Es posible que el enlace haya cambiado. Regresa al inicio para conocer nuestros servicios contables y tributarios.</p>
+    <a href="./" id="home">Ir al inicio</a>
+  </div>
+  <script>
+    // En GitHub Pages de proyecto, lleva a la raíz del repositorio
+    (function(){var p=location.pathname.split("/").filter(Boolean);if(location.hostname.indexOf("github.io")>-1&&p.length){document.getElementById("home").href="/"+p[0]+"/";}})();
+  </script>
+</body>
+</html>
